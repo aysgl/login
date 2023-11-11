@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$green: greenyellow;
+$darkgreen: green;
+$dark: black;
+$border-radius: 0.25rem;
+
+body {
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba($green, 0.2);
+}
+
+.step {
+  background-color: white;
+  border-radius: $border-radius * 3;
+  box-shadow: 1px 10px 30px rgba($dark, 0.1);
+  padding: 2rem;
+
+  svg {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    fill: $green;
+  }
+
+  a {
+    color: $darkgreen;
+  }
+
+  p,
+  small {
+    font-family: "Poppins", sans-serif;
+    padding: 1rem 0rem;
+  }
+  span {
+    text-decoration: underline;
+  }
+  h1 p {
+    font-size: 1rem;
+  }
+  .code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .code {
+      width: 40px;
+      height: 54px;
+      margin: 0.25rem;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0.75rem;
+      border: 1px solid rgba($dark, 0.1);
+      border-radius: $border-radius;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid rgba($green, 1);
+      }
+      &:valid {
+        border-color: rgba($green, 1);
+      }
+      &::placeholder {
+        color: rgba($dark, 0.2);
+      }
+    }
+  }
+  input {
+    height: 46px;
+    padding: 0.5rem 0rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed rgba($dark, 0.3);
+    width: 100%;
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.alert {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba($green, 0.6);
+  color: $darkgreen;
+  border-radius: $border-radius * 2;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-info {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(173, 255, 47, 0.2);
+}
+
+.step {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.step svg {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  fill: greenyellow;
+}
+.step a {
+  color: green;
+}
+.step p,
+.step small {
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 0rem;
+}
+.step span {
+  text-decoration: underline;
+}
+.step h1 p {
+  font-size: 1rem;
+}
+.step .code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step .code-container .code {
+  width: 40px;
+  height: 54px;
+  margin: 0.25rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+.step .code-container .code::-webkit-outer-spin-button, .step .code-container .code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.step .code-container .code:focus {
+  outline: none;
+  border: 1px solid greenyellow;
+}
+.step .code-container .code:valid {
+  border-color: greenyellow;
+}
+.step .code-container .code::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.step .code-container .code::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.step input {
+  height: 46px;
+  padding: 0.5rem 0rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.step input:last-child {
+  margin-bottom: 1rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.alert {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(173, 255, 47, 0.6);
+  color: green;
+  border-radius: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert-info {
+  padding: 0.5rem 1rem;
+}/*# sourceMappingURL=style.css.map */
